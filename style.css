@@ -140,3 +140,10 @@ body {
   margin: 1rem 0;
   font-size: var(--font-secondary-size);
 }
+
+
+@media screen and (max-width:480px) {
+  .container .todo-card {
+    width:450px;
+  }
+}
