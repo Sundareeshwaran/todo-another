@@ -19,6 +19,8 @@ function addTask() {
     list.push(task);
     updateTask();
     input.value = "";
+  } else {
+    window.alert("Please enter a Task...");
   }
 }
 
