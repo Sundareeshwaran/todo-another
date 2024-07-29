@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #3498db;
+  --bg-color: #0c0c3e;
+  --text-primary-color: #efe;
+  --text-color: #121212;
+  --btn-primary-color: #161689;
+  --btn-secondary-color: #8b0000;
+  --btn-primary-color-a: #16168955;
+  --btn-secondary-color-a: #8b000055;
+  --font-primary-size: 2.5rem;
+  --font-secondary-size: 1.5rem;
+  --font-third-size: 1.2rem;
+}
+
+body {
+  background: var(--bg-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .todo-card {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 5px 10px 20px var(--text-primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.container .todo-card .heading {
+  background: var(--primary-color);
+  font-size: var(--font-primary-size);
+  padding: 1rem;
+  border-radius: 1rem 1rem 0 0;
+  font-weight: 600;
+  color: var(--text-primary-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container .todo-card .input-task {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  margin: 1rem auto;
+  gap: 1rem;
+  border: 1px solid #0c0c3eda;
+  padding: 0.5rem 0.7rem;
+  border-radius: 10px;
+}
+
+.container .todo-card .input-task:hover {
+  outline: 4px solid #0c0c3eaa;
+}
+
+.container .todo-card .input-task input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #000;
+  outline: none;
+  font-size: var(--font-third-size);
+}
+
+.container .todo-card .input-task .add-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: var(--btn-primary-color);
+  color: #efe;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.container .todo-card .input-task .add-btn:hover {
+  outline: 4px solid var(--btn-primary-color-a);
+}
+
+.container .todo-card .list-container .del-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: var(--btn-secondary-color);
+  color: #efe;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.container .todo-card .list-container .del-btn:hover {
+  outline: 4px solid var(--btn-secondary-color-a);
+}
+
+.container .todo-card .list-container {
+  padding: 1rem 2rem;
+}
+
+.container .todo-card .list-container .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  flex-direction: row;
+  font-size: var(--font-third-size);
+}
+
+.container .todo-card .list-container .list .para {
+  display: flex;
+  align-items: center;
+}
+
+.container .todo-card .list-container .line {
+  margin: 1rem auto;
+  width: 80%;
+  height: 1px;
+  border-radius: 5px;
+  background: #999999aa;
+}
+
+.container .day {
+  color: var(--text-primary-color);
+  text-align: center;
+  margin: 1rem 0;
+  font-size: var(--font-secondary-size);
+}
